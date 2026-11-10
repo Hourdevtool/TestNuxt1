@@ -1,10 +1,15 @@
+<script setup lang="ts">
+import Header from "~/components/landing/Header.vue";
+import HowItWorks from "~/components/landing/HowItWorks.vue";
+import Info from "~/components/landing/Info.vue";
+import SectionIndicator from "~/components/landing/SectionIndicator.vue";
+</script>
+
 <template>
-  <div>
-    <Button severity="info"> test</Button>
-    <h1 class="text-2xl text-blue-600">สวัสดี Nuxtjs แรกของฉัน</h1>
-    <myinfo />
-    <div style="margin-top: 15px">
-      <NuxtLink to="/about">ไปที่หน้า About (/about) →</NuxtLink>
-    </div>
-  </div>
+  <main class="relative">
+    <Header />
+    <HowItWorks />
+    <Info />
+    <SectionIndicator />
+  </main>
 </template>

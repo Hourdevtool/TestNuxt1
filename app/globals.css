@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+
+:root {
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+  --font-anuphan: "Anuphan", sans-serif;
+  caret-color: #2563EB;
+}
+
+@theme {
+  /* ฟอร์น */
+  --font-primary: var(--font-bai-jamjuree), sans-serif;
+  --font-secondary: var(--font-anuphan), sans-serif;
+  --font-sans: var(--font-bai-jamjuree), sans-serif;
+
+  /* Colors */
+  --color-brand-blue: #2563EB;
+  --color-brand-yellow: #FDD60A;
+  --color-brand-card: #FEC20A;
+
+  /* Font color */
+  --color-brand-text: #FFFFFF;
+
+  --color-card: #262873;
+  --color-footer-bg: #161942;
+
+  --color-button-primary: #3C55D0;
+
+  /* Gold Scale (Gold1: #E5C100) */
+  --color-gold-50: #fefcf3;
+  --color-gold-100: #fcf6db;
+  --color-gold-200: #f9ebb3;
+  --color-gold-300: #f5dc83;
+  --color-gold-400: #f0cb53;
+  --color-gold-500: #e5c100; /* Gold1 */
+  --color-gold-600: #b89300;
+  --color-gold-700: #8c6a00;
+  --color-gold-800: #664b03;
+  --color-gold-900: #3d2b02;
+}
+
+/* Browser surfaces themed to SFM palette (Impeccable Craft Floor) */
+::selection {
+  background-color: #FDD60A;
+  color: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-primary);
+  text-underline-offset: 0.22em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FDD60A;
+}
